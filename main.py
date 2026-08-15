@@ -1,7 +1,9 @@
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
-
+from fastapi import FastAPI, HTTPException, Query
+from fastapi.responses import FileResponse
+from pathlib import Path
 from models import ProcessModel, ProcessCreateRequest
 from db import db
 from llm_service import generate_process_model
@@ -22,12 +24,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
-def root():
-    return {
-        "message": "AI Future Process Designer API is running",
-        "docs": "/docs"
-    }
+BASE_DIR = Path(__file__).resolve().parent
+FRONTEND_DIR = BASE_DIR / "frontend"
+
+
+@app.get("/", include_in_schema=False)
+def serve_frontend():
+    return FileResponse(FRONTEND_DIR / "index.html")
+    
 @app.post("/api/analyze", response_model=ProcessModel)
 def analyze_process(request: ProcessCreateRequest):
     """
