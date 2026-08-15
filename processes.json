@@ -1,0 +1,258 @@
+[
+  {
+    "id": "eb5c314f-795e-4d36-bf2a-95f000cbc50a",
+    "process_name": "Accounts Payable Invoice Verification",
+    "industry": "Finance",
+    "created_at": "2026-08-12T11:59:23.986658+00:00",
+    "current_state": {
+      "activities": [
+        "Receive paper invoice",
+        "Manual entry into SAP",
+        "Manager approval"
+      ],
+      "roles": [
+        "Accounts Payable Clerk",
+        "Finance Manager"
+      ],
+      "systems": [
+        "SAP ERP",
+        "Paper Records"
+      ],
+      "problems": [
+        "High error rate",
+        "3-day approval delay"
+      ]
+    },
+    "ai_opportunities": [
+      {
+        "title": "Intelligent Document Processing",
+        "target_problem": "High error rate",
+        "technology_type": "OCR + LLM",
+        "description": "Extract line items automatically from digital invoices."
+      }
+    ],
+    "future_state": {
+      "activities": [
+        "Automated OCR Extraction",
+        "AI Anomaly Detection",
+        "Manager Sign-off"
+      ],
+      "roles": [
+        "AI Ingestion Agent",
+        "Finance Manager"
+      ],
+      "systems": [
+        "SAP ERP",
+        "Groq OCR Engine"
+      ],
+      "human_vs_ai": {
+        "ai_responsibilities": [
+          "Extract invoice data",
+          "Match PO numbers",
+          "Flag anomalies"
+        ],
+        "human_responsibilities": [
+          "Approve flagged exceptions",
+          "High-value invoice sign-off"
+        ]
+      }
+    },
+    "expected_benefits": [
+      {
+        "metric": "Processing Time",
+        "current_value": "3 days",
+        "future_value": "15 minutes",
+        "impact_description": "95% reduction in invoice cycle time."
+      }
+    ],
+    "reasoning_trace": "Test transcript showing reasoning path."
+  },
+  {
+    "id": "MP-001",
+    "process_name": "Manual Payroll Processing",
+    "industry": "Finance",
+    "created_at": "2024-02-20",
+    "current_state": {
+      "activities": [
+        "Gather employee data",
+        "Calculate salaries and deductions",
+        "Prepare payroll reports",
+        "Review and approve payroll",
+        "Disburse payments"
+      ],
+      "roles": [
+        "Payroll Clerk",
+        "Finance Manager"
+      ],
+      "systems": [
+        "Spreadsheets",
+        "Paper records",
+        "Manual calculators"
+      ],
+      "problems": [
+        "Data entry errors cause payment delays",
+        "Manual calculations are time-consuming and prone to errors",
+        "Compliance risks due to outdated or missing records"
+      ]
+    },
+    "ai_opportunities": [
+      {
+        "title": "Automated Data Extraction",
+        "target_problem": "Data entry errors cause payment delays",
+        "technology_type": "OCR",
+        "description": "Automate data extraction from employee records and payroll documents using Optical Character Recognition (OCR) technology"
+      },
+      {
+        "title": "AI-Powered Payroll Calculations",
+        "target_problem": "Manual calculations are time-consuming and prone to errors",
+        "technology_type": "Machine Learning",
+        "description": "Utilize machine learning algorithms to automate payroll calculations, ensuring accuracy and efficiency"
+      },
+      {
+        "title": "Digital Payroll Reporting",
+        "target_problem": "Compliance risks due to outdated or missing records",
+        "technology_type": "Cloud-Based Reporting",
+        "description": "Generate digital payroll reports, ensuring compliance and easy access to historical data"
+      }
+    ],
+    "future_state": {
+      "activities": [
+        "Automated data extraction",
+        "AI-powered payroll calculations",
+        "Digital payroll reporting",
+        "Review and approval",
+        "Disburse payments"
+      ],
+      "roles": [
+        "Payroll Manager",
+        "IT Support"
+      ],
+      "systems": [
+        "Cloud-based payroll software",
+        "AI-powered calculation tools",
+        "Digital reporting platforms"
+      ],
+      "human_vs_ai": {
+        "ai_responsibilities": [
+          "Data extraction",
+          "Payroll calculations",
+          "Report generation"
+        ],
+        "human_responsibilities": [
+          "Review and approval",
+          "Exception handling",
+          "Strategic decision-making"
+        ]
+      }
+    },
+    "expected_benefits": [
+      {
+        "metric": "Processing Time",
+        "current_value": "5 days",
+        "future_value": "1 day",
+        "impact_description": "Reduced processing time by 80%, enabling faster payment disbursement and improved employee satisfaction"
+      },
+      {
+        "metric": "Error Rate",
+        "current_value": "5%",
+        "future_value": "0.1%",
+        "impact_description": "Decreased error rate by 98%, minimizing compliance risks and ensuring accurate payments"
+      },
+      {
+        "metric": "Cost per Payroll Cycle",
+        "current_value": "$1000",
+        "future_value": "$500",
+        "impact_description": "Reduced cost per payroll cycle by 50%, resulting in significant cost savings and improved operational efficiency"
+      }
+    ],
+    "reasoning_trace": "{\n  \"id\": \"MP-001\",\n   \"process_name\": \"Manual Payroll Processing\",\n   \"industry\": \"Finance\",\n   \"created_at\": \"2024-02-20\",\n   \"current_state\": {\n       \"activities\": [\n           \"Gather employee data\",\n           \"Calculate salaries and deductions\",\n           \"Prepare payroll reports\",\n           \"Review and approve payroll\",\n           \"Disburse payments\"\n       ],\n       \"roles\": [\n           \"Payroll Clerk\",\n           \"Finance Manager\"\n       ],\n       \"systems\": [\n           \"Spreadsheets\",\n           \"Paper records\",\n           \"Manual calculators\"\n       ],\n       \"problems\": [\n           \"Data entry errors cause payment delays\",\n           \"Manual calculations are time-consuming and prone to errors\",\n           \"Compliance risks due to outdated or missing records\"\n       ]\n   },\n   \"ai_opportunities\": [\n       {\n           \"title\": \"Automated Data Extraction\",\n           \"target_problem\": \"Data entry errors cause payment delays\",\n           \"technology_type\": \"OCR\",\n           \"description\": \"Automate data extraction from employee records and payroll documents using Optical Character Recognition (OCR) technology\"\n       },\n       {\n           \"title\": \"AI-Powered Payroll Calculations\",\n           \"target_problem\": \"Manual calculations are time-consuming and prone to errors\",\n           \"technology_type\": \"Machine Learning\",\n           \"description\": \"Utilize machine learning algorithms to automate payroll calculations, ensuring accuracy and efficiency\"\n       },\n       {\n           \"title\": \"Digital Payroll Reporting\",\n           \"target_problem\": \"Compliance risks due to outdated or missing records\",\n           \"technology_type\": \"Cloud-Based Reporting\",\n           \"description\": \"Generate digital payroll reports, ensuring compliance and easy access to historical data\"\n       }\n   ],\n   \"future_state\": {\n       \"activities\": [\n           \"Automated data extraction\",\n           \"AI-powered payroll calculations\",\n           \"Digital payroll reporting\",\n           \"Review and approval\",\n           \"Disburse payments\"\n       ],\n       \"roles\": [\n           \"Payroll Manager\",\n           \"IT Support\"\n       ],\n       \"systems\": [\n           \"Cloud-based payroll software\",\n           \"AI-powered calculation tools\",\n           \"Digital reporting platforms\"\n       ],\n       \"human_vs_ai\": {\n           \"ai_responsibilities\": [\n               \"Data extraction\",\n               \"Payroll calculations\",\n               \"Report generation\"\n           ],\n           \"human_responsibilities\": [\n               \"Review and approval\",\n               \"Exception handling\",\n               \"Strategic decision-making\"\n           ]\n       }\n   },\n   \"expected_benefits\": [\n       {\n           \"metric\": \"Processing Time\",\n           \"current_value\": \"5 days\",\n           \"future_value\": \"1 day\",\n           \"impact_description\": \"Reduced processing time by 80%, enabling faster payment disbursement and improved employee satisfaction\"\n       },\n       {\n           \"metric\": \"Error Rate\",\n           \"current_value\": \"5%\",\n           \"future_value\": \"0.1%\",\n           \"impact_description\": \"Decreased error rate by 98%, minimizing compliance risks and ensuring accurate payments\"\n       },\n       {\n           \"metric\": \"Cost per Payroll Cycle\",\n           \"current_value\": \"$1000\",\n           \"future_value\": \"$500\",\n           \"impact_description\": \"Reduced cost per payroll cycle by 50%, resulting in significant cost savings and improved operational efficiency\"\n       }\n   ],\n   \"reasoning_trace\": null\n}"
+  },
+  {
+    "id": "INV001",
+    "process_name": "Accounts Payable Invoice Processing",
+    "industry": "Finance",
+    "created_at": "2024-01-01",
+    "current_state": {
+      "activities": [
+        "Receive PDF invoice via email",
+        "Manually enter data into ERP",
+        "Send for manager signature",
+        "Verify invoice details",
+        "Update payment status"
+      ],
+      "roles": [
+        "Accounts Payable Clerk",
+        "Finance Manager"
+      ],
+      "systems": [
+        "Legacy ERP",
+        "Email",
+        "Excel"
+      ],
+      "problems": [
+        "Data entry errors cause payment delays",
+        "Manual approvals take 3-5 days",
+        "Inefficient use of staff time"
+      ]
+    },
+    "ai_opportunities": [
+      {
+        "title": "Automated Invoice Data Extraction",
+        "target_problem": "Data entry errors cause payment delays",
+        "technology_type": "OCR",
+        "description": "AI-powered OCR technology extracts relevant data from invoices, reducing manual entry errors and increasing processing speed."
+      },
+      {
+        "title": "AI-Driven Approval Workflow",
+        "target_problem": "Manual approvals take 3-5 days",
+        "technology_type": "LLM Agent",
+        "description": "An AI agent analyzes invoices and automatically routes them for approval, reducing approval time and increasing efficiency."
+      }
+    ],
+    "future_state": {
+      "activities": [
+        "AI extracts invoice data",
+        "AI validates invoice details",
+        "AI routes invoice for approval",
+        "Manager reviews and approves invoice",
+        "AI updates payment status"
+      ],
+      "roles": [
+        "Accounts Payable Clerk (oversight)",
+        "Finance Manager (approval)"
+      ],
+      "systems": [
+        "AI-powered OCR tool",
+        "AI-driven workflow platform",
+        "Modern ERP system"
+      ],
+      "human_vs_ai": {
+        "ai_responsibilities": [
+          "Data extraction",
+          "Invoice validation",
+          "Approval routing"
+        ],
+        "human_responsibilities": [
+          "Oversight and exception handling",
+          "Strategic decision making",
+          "Final approval"
+        ]
+      }
+    },
+    "expected_benefits": [
+      {
+        "metric": "Processing Time",
+        "current_value": "5 days",
+        "future_value": "1 day",
+        "impact_description": "Reduced processing time by 80%, enabling faster payment to suppliers and improved cash flow management."
+      },
+      {
+        "metric": "Error Rate",
+        "current_value": "5%",
+        "future_value": "0.5%",
+        "impact_description": "Decreased error rate by 90%, resulting in fewer payment delays and improved supplier relationships."
+      }
+    ],
+    "reasoning_trace": "{\n  \"id\":\"INV001\",\n   \"process_name\":\"Accounts Payable Invoice Processing\",\n   \"industry\":\"Finance\",\n   \"created_at\":\"2024-01-01\",\n   \"current_state\":{\n      \"activities\":[\n         \"Receive PDF invoice via email\",\n         \"Manually enter data into ERP\",\n         \"Send for manager signature\",\n         \"Verify invoice details\",\n         \"Update payment status\"\n      ],\n      \"roles\":[\n         \"Accounts Payable Clerk\",\n         \"Finance Manager\"\n      ],\n      \"systems\":[\n         \"Legacy ERP\",\n         \"Email\",\n         \"Excel\"\n      ],\n      \"problems\":[\n         \"Data entry errors cause payment delays\",\n         \"Manual approvals take 3-5 days\",\n         \"Inefficient use of staff time\"\n      ]\n   },\n   \"ai_opportunities\":[\n      {\n         \"title\":\"Automated Invoice Data Extraction\",\n         \"target_problem\":\"Data entry errors cause payment delays\",\n         \"technology_type\":\"OCR\",\n         \"description\":\"AI-powered OCR technology extracts relevant data from invoices, reducing manual entry errors and increasing processing speed.\"\n      },\n      {\n         \"title\":\"AI-Driven Approval Workflow\",\n         \"target_problem\":\"Manual approvals take 3-5 days\",\n         \"technology_type\":\"LLM Agent\",\n         \"description\":\"An AI agent analyzes invoices and automatically routes them for approval, reducing approval time and increasing efficiency.\"\n      }\n   ],\n   \"future_state\":{\n      \"activities\":[\n         \"AI extracts invoice data\",\n         \"AI validates invoice details\",\n         \"AI routes invoice for approval\",\n         \"Manager reviews and approves invoice\",\n         \"AI updates payment status\"\n      ],\n      \"roles\":[\n         \"Accounts Payable Clerk (oversight)\",\n         \"Finance Manager (approval)\"\n      ],\n      \"systems\":[\n         \"AI-powered OCR tool\",\n         \"AI-driven workflow platform\",\n         \"Modern ERP system\"\n      ],\n      \"human_vs_ai\":{\n         \"ai_responsibilities\":[\n            \"Data extraction\",\n            \"Invoice validation\",\n            \"Approval routing\"\n         ],\n         \"human_responsibilities\":[\n            \"Oversight and exception handling\",\n            \"Strategic decision making\",\n            \"Final approval\"\n         ]\n      }\n   },\n   \"expected_benefits\":[\n      {\n         \"metric\":\"Processing Time\",\n         \"current_value\":\"5 days\",\n         \"future_value\":\"1 day\",\n         \"impact_description\":\"Reduced processing time by 80%, enabling faster payment to suppliers and improved cash flow management.\"\n      },\n      {\n         \"metric\":\"Error Rate\",\n         \"current_value\":\"5%\",\n         \"future_value\":\"0.5%\",\n         \"impact_description\":\"Decreased error rate by 90%, resulting in fewer payment delays and improved supplier relationships.\"\n      }\n   ],\n   \"reasoning_trace\":null\n}"
+  }
+]
