@@ -22,6 +22,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def root():
+    return {
+        "message": "AI Future Process Designer API is running",
+        "docs": "/docs"
+    }
 @app.post("/api/analyze", response_model=ProcessModel)
 def analyze_process(request: ProcessCreateRequest):
     """
