@@ -36,7 +36,7 @@ def generate_process_model(process_name: str, industry: str = "Finance") -> Proc
     user_prompt = f"Please analyze the following process: '{process_name}' in the '{industry}' industry."
 
     # Use a currently supported Groq model
-    model = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+    model = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 
     try:
         response = client.chat.completions.create(
